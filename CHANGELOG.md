@@ -8,3 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0] - 2202-08-03
 Initial building of the Template.
+
+### Added
+- .gitignore
+- README.md 
+
+- Added basic install and running instructions to the Readme.
