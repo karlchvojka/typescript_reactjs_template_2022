@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "lint": "npx eslint ./",
+    "lint:fix": "npx eslint --fix ./",
     "start": "webpack serve",
     "test": "test"
   },
