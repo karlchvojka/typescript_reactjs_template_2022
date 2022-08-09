@@ -25,4 +25,21 @@ module.exports = {
     'arrow-body-style': ['error', 'always'],
 
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+    'import/resolver': {
+      alias: {
+        map: [
+          ['src', './src'],
+          ['public', './public'],
+          ['elements', './src/components/elements'],
+          ['modules', './src/components/modules'],
+          ['layouts', './src/components/layouts'],
+        ],
+        extensions: ['.ts', '.js', '.jsx', '.json'],
+      },
+    },
+  },
 }

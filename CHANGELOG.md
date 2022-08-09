@@ -23,3 +23,4 @@ Initial building of the Template.
 ### Added
 - Cypress (left on branch because cypress is broken)
 - Built Header component
+- Added Webpack and Eslint support for alias's.
