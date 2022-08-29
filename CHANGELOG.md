@@ -28,7 +28,11 @@ Initial building of the Template.
 ## [1.0.3] - 2022-08-29
 Issue fixing
 
+Note: #3 was done first to establish folder/file settings for the mobile setup
+
 [#3 Global Config](https://github.com/karlchvojka/reactjs_template_2022/issues/3)\
+[#2 Default Mobile Setup](https://github.com/karlchvojka/reactjs_template_2022/issues/2)\
+[#6 Webpack configuration](https://github.com/karlchvojka/reactjs_template_2022/issues/6)
 
 ### Added
 
@@ -46,6 +50,17 @@ Issue fixing
 - Added /src/globalConfig/templates folder
 - Added /src/globalConfig/templates/styles.js file
 
+#### #6
+- Added /public/favicon.ico
+- Added /public/index.html
+- Added /public/manifest.json
+- Added /public/robots.txt
+- Added /public/sitemap.xml
+- Added /src/template.html
+- Installed babel-loader (8.2.5)
+- Installed html-loader (4.1.0)
+- Installed html-webpack-plugin (5.5.0)
+
 ### Changed
 
 #### #3
@@ -59,11 +74,31 @@ Issue fixing
   - Added no-static-element-interactions rule
 - /src/globalConfig/GlobalStyles.js
   - Added Mobile import
-  - Added default mobile breakpoints.
+  - Added default mobile breakpoints
 - /src/StyledApp.js
   - Added Mobile import
-  - Added default mobile breakpoints.
+  - Added default mobile breakpoints
 - /src/components/modules/Header/StyledHeader.js
   - Added Mobile import
-  - Added default mobile breakpoints.
+  - Added default mobile breakpoints
+
+#### #6
+- webpack.config.js
+  - Added comments throughout the code.
+  - Integrated path library usage within:
+    - entry
+    - output
+    - devServer
+  - Added rules for file types:
+    - js/jsx
+    - png/jpg/jpeg/gif
+    - font files
+    - html
+  - Added plugin settings
+    - HtmlWebPackPlugin settings
+
+### Removed
+
+#### #6
+- Removed /cypress folder
 
