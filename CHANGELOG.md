@@ -24,3 +24,26 @@ Initial building of the Template.
 - Cypress (left on branch because cypress is broken)
 - Built Header component
 - Added Webpack and Eslint support for alias's.
+
+## [1.0.3] - 2022-08-29
+Issue fixing
+
+[#3 Global Config](https://github.com/karlchvojka/reactjs_template_2022/issues/3)\
+
+### Added
+
+#### #3
+- Added /src/globalAssets folder
+- Added /src/globalAssets/data folder
+- Added /src/globalAssets/fonts folder
+- Added /src/globalAssets/fonts/fonts.js file
+- Added /src/globalAssets/images folder
+- Added /src/globalConfig folder
+- Added /src/globalConfig/GlobalStyles.js
+
+
+### Changed
+
+#### #3
+- App.js
+  - Added GlobalStyles import.
