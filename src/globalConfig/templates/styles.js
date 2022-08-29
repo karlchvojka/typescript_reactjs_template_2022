@@ -1,10 +1,10 @@
 // Library Imports
-import styled from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import media from 'globalConfig/mobile'
 
-const StyledApp = styled.section`
+const GlobalStyle = createGlobalStyle`
+
 /* MOBILE FIRST DEFAULT STYLES */
-  width: 100%;
 
 /* Min width of 375 */
   ${media.iphoneSe `
@@ -40,6 +40,5 @@ const StyledApp = styled.section`
   ${media.udh `
     
   `}
-`
 
-export default StyledApp
+`
