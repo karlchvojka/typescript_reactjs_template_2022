@@ -41,9 +41,29 @@ Issue fixing
 - Added /src/globalConfig folder
 - Added /src/globalConfig/GlobalStyles.js
 
+#### #2
+- Added /src/globalConfig/mobile.js
+- Added /src/globalConfig/templates folder
+- Added /src/globalConfig/templates/styles.js file
 
 ### Changed
 
 #### #3
-- App.js
+- /src/App.js
   - Added GlobalStyles import.
+
+#### #2
+- /.eslintrc.js
+  - Added arrow-body-style rules
+  - Added quotes rule
+  - Added no-static-element-interactions rule
+- /src/globalConfig/GlobalStyles.js
+  - Added Mobile import
+  - Added default mobile breakpoints.
+- /src/StyledApp.js
+  - Added Mobile import
+  - Added default mobile breakpoints.
+- /src/components/modules/Header/StyledHeader.js
+  - Added Mobile import
+  - Added default mobile breakpoints.
+
