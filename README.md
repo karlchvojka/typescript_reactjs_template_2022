@@ -1,4 +1,4 @@
-# ReactJS Template 2022
+# Typescript ReactJS Template 2022
 This is a CRA Alternative to be used to bootstrap new projects.  
 
 ## Requirements
