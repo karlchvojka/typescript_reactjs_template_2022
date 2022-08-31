@@ -1,14 +1,14 @@
 // Framework Imports
-import React from 'react'
+import React, { FC } from 'react'
 
 // Library Imports
 import Header from 'modules/Header/Header'
 
 // CSS Imports
-import GlobalStyle from 'src/globalConfig/GlobalStyles'
+import GlobalStyle from 'globalConfig/GlobalStyles'
 import StyledApp from './StyledApp'
 
-const App = () => {
+const App: FC = () => {
   return (
     <StyledApp>
       <GlobalStyle />

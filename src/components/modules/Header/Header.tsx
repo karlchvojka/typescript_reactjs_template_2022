@@ -1,5 +1,5 @@
 // Framework Imports
-import React from 'react'
+import React, { FC } from 'react'
 
 // CSS Imports
 import StyledHeader from './StyledHeader'
@@ -7,7 +7,7 @@ import StyledHeader from './StyledHeader'
 /**
  * This the Header component.
  */
-const Header = () => {
+const Header: FC = () => {
   return (
     <StyledHeader>
       <h1>The Template 2022</h1>

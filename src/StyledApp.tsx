@@ -1,43 +1,42 @@
 // Library Imports
 import styled from 'styled-components'
-import media from 'globalConfig/mobile'
+import { mediaQueries } from 'globalConfig/mobile'
 
 const StyledApp = styled.section`
 /* MOBILE FIRST DEFAULT STYLES */
   width: 100%;
 
 /* Min width of 375 */
-  ${media.iphoneSe `
-    
+  ${mediaQueries('iphoneSe')`
   `}
 
 /* Min width of 414 */
-  ${media.iphoneXr `
+  ${mediaQueries('iphoneXr') `
     
   `}
 
 /* Min width of 576 */
-  ${media.landscapePhones `
+  ${mediaQueries('landscapePhones') `
     
   `}
 
 /* Min width of 768 */
-  ${media.tablet `
+  ${mediaQueries('tablet') `
     
   `}
 
 /* Min width of 1024 */
-  ${media.desktop `
+  ${mediaQueries('desktop') `
     
   `}
 
 /* Min width of 1200 */
-  ${media.widescreen `
+  ${mediaQueries('widescreen') `
     
   `}
 
 /* Min width of 1980 */
-  ${media.udh `
+  ${mediaQueries('udh') `
     
   `}
 `
