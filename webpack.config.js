@@ -2,7 +2,7 @@
 const path = require('path')
 
 // Plugin Library Imports
-const HtmlWebPackPlugin = require("html-webpack-plugin")
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: 'development',
@@ -11,7 +11,7 @@ module.exports = {
    * Configured entry for the index.js file.
    */
   entry: {
-    main: path.resolve(__dirname, './index.js'),
+    main: path.resolve(__dirname, './index.tsx'),
   },
 
   /**
@@ -29,7 +29,7 @@ module.exports = {
    */
   devServer: {
     static: {
-      directory: path.join(__dirname, "dist"),
+      directory: path.join(__dirname, 'dist'),
     },
     open: true,
     hot: true,
@@ -55,7 +55,7 @@ module.exports = {
       templates: path.resolve(__dirname, './src/components/templates'),
     },
 
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
   },
   module: {
 
@@ -64,7 +64,7 @@ module.exports = {
      */
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         use: 'babel-loader',
       },
@@ -80,7 +80,7 @@ module.exports = {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader"
+            loader: 'html-loader'
           }
         ]
       }
@@ -90,7 +90,7 @@ module.exports = {
   /**
    * Plugin configurations.
    */
-   plugins: [
+  plugins: [
     
     new HtmlWebPackPlugin({
       template: path.resolve(__dirname, './src/template.html'), // template file
